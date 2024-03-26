@@ -12,6 +12,7 @@ mkdir(workingDir,'images');
 OutputVidName = 'BDRT_HBT_1m';
 
 % Define image resize factor
+% ImgReSzFct = 1 / (Desired Resolution / Ground Sampling Distance)
 ImgReSzFct = 0.048;
 
 %% Create VideoReader
