@@ -12,8 +12,9 @@ mkdir(workingDir,'images');
 OutputVidName = 'BDRT_HBT_1m';
 
 % Define image resize factor
-% ImgReSzFct = 1 / (Desired Resolution / Ground Sampling Distance)
-ImgReSzFct = 0.048;
+GSD = 0.0367;
+DesiredRes = 0.5;
+ImgReSzFct = 1 / (DesiredRes / GSD);
 
 %% Create VideoReader
 % Create a VideoReader to use for reading frames from the file.
